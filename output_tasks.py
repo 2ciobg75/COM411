@@ -8,14 +8,14 @@ print("...How to get user input")
 print()
 print("I hope you are enjoying the lesson thus far!")
 
-#Display escape characters
+# Display escape characters
 print("\n Displays a new line")
 print("\t Displays a tab space")
 print("\\ Displays a back slash")
 print("\" Displays a double quote")
 print("\' Displays a single quote")
 
-#Display message with escape characters
+# Display message with escape characters
 print("\n \t \"I am programming\" \n")
 
 print("Please enter a character for the eye for example \"o\"")
