@@ -16,5 +16,10 @@ print("\" Displays a double quote")
 print("\' Displays a single quote")
 
 #Display message with escape characters
-print("\n \t \"I am programming\"")
+print("\n \t \"I am programming\" \n")
 
+# Display a box
+print("##########")
+print("#        #")
+print("#        #")
+print("##########")
