@@ -18,8 +18,11 @@ print("\' Displays a single quote")
 #Display message with escape characters
 print("\n \t \"I am programming\" \n")
 
+print("Please enter a character for the eye for example \"o\"")
+eye = input()
+print("The robot expression is now as follows: \n")
 # Display a box
 print("##########")
-print("#        #")
-print("#        #")
+print(f"#  {eye}  {eye}  #")
+print("#  ____  #")
 print("##########")
