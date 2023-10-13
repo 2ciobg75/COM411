@@ -24,6 +24,7 @@ print("Activity completed!")
 print("Towards which direction should I go (up, down, left or right)?")
 direction = input()
 
+# The robot will move in the direction specified
 if direction == "up":
     print("I am moving in an upward direction")
 elif direction == "down":
@@ -34,3 +35,12 @@ elif direction == "right":
     print("I am moving in an rightward direction")
 else:
     print("You didn't give me correct instructions.")
+
+# Ask the user to enter a number
+print("Please enter a number: ")
+number = int(input())
+
+if (number % 2) == 0:
+    print(f"The {number} is even.")
+else:
+    print(f"The {number} is odd.")
