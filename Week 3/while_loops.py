@@ -19,3 +19,14 @@ while obstacles_numb != obstacles_var:
     obstacles_var = obstacles_var + 1
     print(f"Avoiding...Done! {obstacles_var} obstacles avoided.")
 print("\n All obstacles have been avoided")
+
+# Ask the user how many bars should be charged
+print("How many bars should be charged?")
+bars_numb = int(input())
+bars_var = 0
+
+while bars_numb != bars_var:
+    bars_var = bars_var + 1
+    print("Charging:", bars_var * "█ ")
+
+print("The battery is fully charged!")
