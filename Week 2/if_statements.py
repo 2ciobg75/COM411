@@ -47,7 +47,7 @@ else:
     print(f"The {number} is odd.")
 
 # Ask the user for two numbers
-print("Please enter a number: ")
+print("Please enter a first number: ")
 number_1 = int(input())
 print(f"Your first number is: {number_1}")
 
