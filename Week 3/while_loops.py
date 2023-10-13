@@ -42,3 +42,13 @@ print(user_phrase)
 while number_characters != len(user_phrase):
     number_characters = number_characters + 1
 print("Hi " * number_characters)
+
+# Program that counts the first 100 numbers
+print("Calculating the sum of the first 100 numbers...")
+numbers = 0
+result_number = 0
+
+while numbers != 100:
+    numbers = numbers + 1
+    result_number = result_number + numbers
+print("...Done! The answer is", result_number)
