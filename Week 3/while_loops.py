@@ -52,3 +52,15 @@ while numbers != 100:
     numbers = numbers + 1
     result_number = result_number + numbers
 print("...Done! The answer is", result_number)
+
+# Program that counts the numbers chosen by the user
+print("How many numbers should I sum up?")
+numb_numbers = int(input())
+numb_numbers_var = 0
+result_number = 0
+
+while numb_numbers != numb_numbers_var:
+    numb_numbers_var = numb_numbers_var + 1
+    print("Please enter a number:", numb_numbers_var, "of", numb_numbers)
+    result_number = result_number + int(input())
+print("The answer is", result_number)
