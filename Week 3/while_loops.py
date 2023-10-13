@@ -25,8 +25,20 @@ print("How many bars should be charged?")
 bars_numb = int(input())
 bars_var = 0
 
+# The program will update with the number of charged bars
 while bars_numb != bars_var:
     bars_var = bars_var + 1
     print("Charging:", bars_var * "█ ")
 
 print("The battery is fully charged!")
+
+# Ask the user to enter a phrase
+print("Please enter a phrase: ")
+user_phrase = input()
+number_characters = 0
+print(user_phrase)
+
+# Count how many characters the phrase contains and display "Hi" that many times
+while number_characters != len(user_phrase):
+    number_characters = number_characters + 1
+print("Hi " * number_characters)
