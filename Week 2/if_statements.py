@@ -40,7 +40,24 @@ else:
 print("Please enter a number: ")
 number = int(input())
 
+# Check to see if the number is odd or even
 if (number % 2) == 0:
     print(f"The {number} is even.")
 else:
     print(f"The {number} is odd.")
+
+# Ask the user for two numbers
+print("Please enter a number: ")
+number_1 = int(input())
+print(f"Your first number is: {number_1}")
+
+print("Please enter a second number: ")
+number_2 = int(input())
+print(f"Your second number is: {number_2}")
+
+if number_1 > number_2:
+    print("The second number is the smallest!")
+elif number_1 == number_2:
+    print("The numbers are equal!")
+else:
+    print("The first number is the smallest!")
