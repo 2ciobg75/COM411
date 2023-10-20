@@ -5,5 +5,19 @@ def listen():
     print(f"That was a loud {sound}!")
 
 
-# Calling the function that listens
+# Calling the function "listen"
 listen()
+
+
+# Function that ask the user what is in front of us
+def identify():
+    print("What lies before us?")
+    word = input()
+    if word == "a large boulder":
+        print("It's time to run!")
+    else:
+        print("We will be fine.")
+
+
+# Calling the function "identify"
+identify()
