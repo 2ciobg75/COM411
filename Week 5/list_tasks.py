@@ -12,14 +12,29 @@ def movements():
     path = ["Move Forward", 10, "Move Backward", 5, "Move Left", 3, "Move Right", 1]
     return path
 
-# A function that
+
+# A function that uses items from a list to display a message
 def run_task2():
     print("Moving...")
     direction = movements()
-    print(f"{direction[0]} for {direction[1]} steps")
-    print(f"{direction[2]} for {direction[3]} steps")
-    print(f"{direction[4]} for {direction[5]} steps")
-    print(f"{direction[6]} for {direction[7]} steps")
+
+    for items in range(0, len(direction), 2):
+        print(f"{direction[items]} for {direction[items+1]} steps")
 
 
 run_task2()
+
+
+# A function that displays a menu of directions
+def menu():
+    print("Please select a direction: ")
+    path = directions()
+    for items in range(0, len(path), 1):
+        print(f"{items}: {path[items]}")
+
+
+def run_task3():
+    menu()
+
+
+run_task3()
