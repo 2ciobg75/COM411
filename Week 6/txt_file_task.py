@@ -63,8 +63,8 @@ print()
 def search(file_path):
     print("Searching...")
     with open(file_path) as file:
-        for line in file:
-            print(f"Looked in {line.strip()}")
+        for location in file:
+            print(f"Looked in {location.strip()}")
     print("...Done!")
 
 
@@ -76,3 +76,40 @@ if __name__ == "__main__":
     run_task3()
 
 print()
+
+
+# This function will organise text and return it as a variable
+def search_books(file_path):
+    print("Searching...")
+
+    sections = ""
+    books = "Books:\n"
+
+    with open(file_path) as file:
+        for line in file:
+            if line.startswith("Section"):
+                sections = sections + line
+            else:
+                books = books + line
+
+    print("Done!")
+
+    return f"{sections}\n\n{books}"
+
+
+# This function will save the variable of the previous function in a new file
+def save(file_path, data):
+    print("Saving...")
+    with open(file_path, "w") as file:
+        file.write(data)
+    print("Done!")
+
+
+def run_task4():
+    data = search_books("books.txt")
+    print()
+    save("exported_books.txt", data)
+
+
+if __name__ == "__main__":
+    run_task4()
