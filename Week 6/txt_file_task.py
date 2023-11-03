@@ -57,3 +57,22 @@ if __name__ == "__main__":
     run_task2()
 
 print()
+
+
+# This function reads the file line by line and displays the message "Looked in..." before each line
+def search(file_path):
+    print("Searching...")
+    with open(file_path) as file:
+        for line in file:
+            print(f"Looked in {line.strip()}")
+    print("...Done!")
+
+
+def run_task3():
+    search("library.txt")
+
+
+if __name__ == "__main__":
+    run_task3()
+
+print()
